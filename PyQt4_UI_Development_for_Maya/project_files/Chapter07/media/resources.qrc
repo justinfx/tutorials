@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="images">
+    <file>slider_knob.png</file>
+  </qresource>
+</RCC>

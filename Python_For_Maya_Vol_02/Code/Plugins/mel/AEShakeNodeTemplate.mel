@@ -1,0 +1,35 @@
+/*
+
+AEshakeNodeTemplate.mel
+
+    The Attribute Editor template for our
+    shakeNode plugin
+
+    To be placed in your MAYA_SCRIPT_PATH location
+    or just source it for testing purposes:
+
+    MEL:
+    source /path/to/AEshakeNodeTemplate.mel
+
+*/
+
+global proc AEshakeNodeTemplate( string $nodeName )
+{
+    editorTemplate -beginScrollLayout;
+ 
+    editorTemplate -beginLayout "Shake Node Attributes" -collapse 0;
+        editorTemplate -addControl "amplitude";
+        editorTemplate -addControl "frequency";
+        editorTemplate -addControl "octaves";
+        editorTemplate -addControl "seed";
+ 
+    editorTemplate -endLayout;
+ 
+    AEdependNodeTemplate $nodeName;
+ 
+    editorTemplate -addExtraControls;
+    editorTemplate -endScrollLayout;
+};
+
+
+

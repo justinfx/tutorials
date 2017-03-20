@@ -1,0 +1,11 @@
+//Maya 2011 x64 Project Definition
+
+workspace -fr "offlineEdit" "scenes/edits";
+workspace -fr "scene" "scenes";
+workspace -fr "movie" "data";
+workspace -fr "autoSave" "autosave";
+workspace -fr "mayaAscii" "scenes";
+workspace -fr "textures" "textures";
+workspace -fr "particles" "particles";
+workspace -fr "templates" "assets";
+workspace -fr "mayaBinary" "scenes";
